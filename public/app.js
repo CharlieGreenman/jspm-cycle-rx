@@ -1,27 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Router, Route, browserHistory } from 'react-router'
+import moment from "moment";
+import _ from "lodash";
 
-import Home from './routes/home'
-import { IntlProvider, addLocaleData } from 'react-intl'
-import en from 'react-intl/locale-data/en'
-addLocaleData(en)
+let date = moment().format();
 
-const routes = <Route path='/' component={Home} />
+import './scss/main.scss!';
 
-class RenderForcer extends React.Component {
-  componentWillMount () {
-    this.forceUpdate()  // a little hack to help us rerender when this module is reloaded
-  }
-  render () {
-    return <IntlProvider locale='en'>
-      <Router history={browserHistory}>
-        {routes}
-      </Router>
-    </IntlProvider>
-  }
-}
-
-ReactDOM.render((
-  <RenderForcer />
-), document.getElementById('app'))
+_.forEach(date, char => console.log(char));

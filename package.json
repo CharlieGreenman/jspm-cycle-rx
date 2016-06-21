@@ -1,7 +1,7 @@
 {
-  "name": "react-app",
+  "name": "jspm-cycle-rx",
   "version": "0.0.1",
-  "description": "react.js app",
+  "description": "A JSPM build catering to cycle and rx. Let's see how far this puppy can go.",
   "main": "server.js",
   "engines": {
     "node": ">=4.0.0"
@@ -12,29 +12,34 @@
     "pretest": "node_modules/.bin/standard",
     "start": "node server",
     "test": "node run-tests",
-    "build": "node_modules/.bin/jspm bundle app --inject --minify"
+    "build": "node_modules/.bin/jspm bundle app --inject --minify",
+    "pug": "pug -P ./public/pug/*.pug -o ./public"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:capaj/jspm-react.git"
+    "url": "git+https://github.com/CharlieGreenman/jspm-cycle-rx.git"
   },
-  "author": "capajj@gmail.com",
+  "author": "charlie@razroo.com",
   "bugs": {
-    "url": "https://github.com/capaj/jspm-react/issues"
+    "url": "https://github.com/CharlieGreenman/jspm-cycle-rx/issues"
   },
-  "homepage": "https://github.com/capaj/jspm-react",
+  "homepage": "https://github.com/CharlieGreenman/jspm-cycle-rx#readme",
   "jspm": {
     "directories": {
       "baseURL": "public"
     },
     "dependencies": {
       "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.6.0",
+      "lodash": "npm:lodash@^4.13.1",
       "mobx": "npm:mobx@^2.3.2",
       "mobx-react": "npm:mobx-react@^3.0.3",
+      "moment": "npm:moment@^2.13.0",
       "react": "npm:react@^15.1.0",
       "react-dom": "npm:react-dom@^15.1.0",
       "react-intl": "npm:react-intl@2.1.3",
-      "react-router": "npm:react-router@^2.4.0"
+      "react-router": "npm:react-router@^2.4.0",
+      "sass": "github:KevCJones/plugin-scss@^0.2.11",
+      "scss": "github:mobilexag/plugin-sass@^0.4.5"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
@@ -58,6 +63,7 @@
     "jspm": "^0.16.39",
     "mocha": "^2.5.3",
     "mocha-jsdom": "^1.1.0",
+    "pug": "^2.0.0-beta3",
     "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
