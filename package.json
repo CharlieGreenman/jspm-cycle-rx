@@ -31,6 +31,7 @@
     },
     "dependencies": {
       "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.6.0",
+      "css": "npm:jspm-loader-css-modules@^1.0.1-beta1",
       "lodash": "npm:lodash@^4.13.1",
       "mobx": "npm:mobx@^2.3.2",
       "mobx-react": "npm:mobx-react@^3.0.3",

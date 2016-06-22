@@ -17,6 +17,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.9",
     "core-js": "npm:core-js@1.2.6",
+    "css": "npm:jspm-loader-css-modules@1.0.1-beta1",
     "lodash": "npm:lodash@4.13.1",
     "mobx": "npm:mobx@2.3.2",
     "mobx-react": "npm:mobx-react@3.3.1",
@@ -272,6 +273,23 @@ System.config({
       "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:css-modules-loader-core@1.0.0": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "icss-replace-symbols": "npm:icss-replace-symbols@1.0.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "postcss": "npm:postcss@5.0.10",
+      "postcss-modules-extract-imports": "npm:postcss-modules-extract-imports@1.0.0",
+      "postcss-modules-local-by-default": "npm:postcss-modules-local-by-default@1.0.0",
+      "postcss-modules-scope": "npm:postcss-modules-scope@1.0.0",
+      "postcss-modules-values": "npm:postcss-modules-values@1.1.0"
+    },
+    "npm:css-selector-tokenizer@0.5.4": {
+      "cssesc": "npm:cssesc@0.1.0",
+      "fastparse": "npm:fastparse@1.1.1"
+    },
+    "npm:debounce@1.0.0": {
+      "date-now": "npm:date-now@1.0.1"
+    },
     "npm:debug@2.2.0": {
       "ms": "npm:ms@0.7.1"
     },
@@ -308,6 +326,9 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:fastparse@1.1.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:fbjs@0.8.3": {
       "core-js": "npm:core-js@1.2.6",
@@ -368,6 +389,15 @@ System.config({
     "npm:js-base64@2.1.9": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
+    "npm:jspm-loader-css-modules@1.0.1-beta1": {
+      "jspm-loader-css": "npm:jspm-loader-css@1.0.1-beta1"
+    },
+    "npm:jspm-loader-css@1.0.1-beta1": {
+      "css-modules-loader-core": "npm:css-modules-loader-core@1.0.0",
+      "debounce": "npm:debounce@1.0.0",
+      "path": "npm:path@0.12.7",
+      "toposort": "npm:toposort@0.2.12"
+    },
     "npm:lodash@4.13.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -414,6 +444,10 @@ System.config({
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:path@0.12.7": {
+      "process": "npm:process@0.11.5",
+      "util": "npm:util@0.10.3"
+    },
     "npm:pbkdf2@3.0.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -421,6 +455,32 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:postcss-modules-extract-imports@1.0.0": {
+      "postcss": "npm:postcss@5.0.10",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:postcss-modules-local-by-default@1.0.0": {
+      "css-selector-tokenizer": "npm:css-selector-tokenizer@0.5.4",
+      "postcss": "npm:postcss@5.0.10"
+    },
+    "npm:postcss-modules-scope@1.0.0": {
+      "css-selector-tokenizer": "npm:css-selector-tokenizer@0.5.4",
+      "postcss": "npm:postcss@5.0.10",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:postcss-modules-values@1.1.0": {
+      "icss-replace-symbols": "npm:icss-replace-symbols@1.0.2",
+      "postcss": "npm:postcss@5.0.10"
+    },
+    "npm:postcss@5.0.10": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "js-base64": "npm:js-base64@2.1.9",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "source-map": "npm:source-map@0.5.6",
+      "supports-color": "npm:supports-color@3.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:postcss@5.0.21": {
@@ -542,6 +602,10 @@ System.config({
     },
     "npm:supports-color@3.1.2": {
       "has-flag": "npm:has-flag@1.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:toposort@0.2.12": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:ua-parser-js@0.7.10": {
