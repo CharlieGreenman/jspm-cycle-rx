@@ -1,7 +1,11 @@
-'use strict'
-const httpServer = require('http-server')
-const port = process.env.PORT || 9080
-let cache = 3600
+'use strict';
+const httpServer = require('http-server');
+const port = process.env.PORT || 9080;
+let cache = 3600;
+var open = require('open');
+
+open("http://localhost:" + port + "/");
+
 if (process.env.NODE_ENV === 'production') {
   console.log('running in production mode(with caching)-make sure you have "Disable cache (while DevTools is open)" checked in the browser to see the changes while developing')
 } else {
