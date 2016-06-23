@@ -26,18 +26,7 @@ System.config({
     "react-dom": "npm:react-dom@15.1.0",
     "react-intl": "npm:react-intl@2.1.2",
     "react-router": "npm:react-router@2.4.1",
-    "sass": "github:KevCJones/plugin-scss@0.2.11",
     "scss": "github:mobilexag/plugin-sass@0.4.5",
-    "github:KevCJones/plugin-scss@0.2.11": {
-      "autoprefixer": "npm:autoprefixer@6.3.6",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "lodash": "npm:lodash@4.13.1",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "postcss": "npm:postcss@5.0.21",
-      "reqwest": "github:ded/reqwest@2.0.5",
-      "sass.js": "npm:sass.js@0.9.10",
-      "url": "github:jspm/nodelibs-url@0.1.0"
-    },
     "github:capaj/systemjs-hot-reloader@0.5.9": {
       "debug": "npm:debug@2.2.0",
       "socket.io-client": "github:socketio/socket.io-client@1.4.6",
