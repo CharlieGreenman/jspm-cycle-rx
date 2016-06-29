@@ -14,7 +14,7 @@
     "test": "node run-tests",
     "build": "node_modules/.bin/jspm bundle app --inject --minify",
     "pug": "pug -P ./public/pug/*.pug -o ./public",
-    "lint": "eslint ./public/app.js"
+    "lint": "esw ./public/app.js -w"
   },
   "repository": {
     "type": "git",
@@ -65,6 +65,7 @@
     "eslint-import-resolver-jspm": "^2.1.0",
     "eslint-plugin-import": "^1.9.2",
     "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-watch": "^2.1.11",
     "glob": "^7.0.4",
     "husky": "^0.11.4",
     "jspm": "^0.16.39",
